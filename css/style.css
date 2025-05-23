@@ -2,7 +2,7 @@
 
 :root {
     --background: #181212;
-    --special: #101010;
+    --special: #9e9191;
     --text: #faf7f7;
 }
 
@@ -36,6 +36,26 @@ body {
     gap: 20px;
 }
 
+.navbar-desktop .navbar-items ul li {
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-desktop .navbar-items ul li a {
+    color: var(--text);
+    text-decoration: none;  
+}
+
+.navbar-desktop .navbar-items ul li a:hover {
+    color: red;
+}
+
+.navbar-desktop .navbar-items ul li:hover {
+    font-weight: bold;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+
 .navbar-desktop .navbar-toggle {
     /* display: none; */
     visibility: hidden;
@@ -56,10 +76,15 @@ body {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     place-content: center;
+    padding-inline: 60px;
 }
 
 .hero-section .hero-image img {
     width: 350px;
+}
+
+.hero-section .hero-content {
+    line-height: 45px;
 }
 
 .hero-section .hero-content button {
@@ -81,7 +106,6 @@ body {
     /* End */
 
     /* Hero */
-
     .hero-section {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
@@ -95,7 +119,6 @@ body {
         text-align: center;
         margin-top: 25px;
     }
-
     /* End */
 
 }
