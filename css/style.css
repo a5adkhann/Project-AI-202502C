@@ -15,7 +15,7 @@
 body {
     background-color: var(--background);
     color: var(--text);
-}   
+}
 
 .navbar-desktop {
     background-color: var(--special);
@@ -41,11 +41,61 @@ body {
     visibility: hidden;
 }
 
-@media screen and (max-width: 375px){
-    .navbar-desktop .navbar-toggle {
-    visibility: visible;
+.navbar-mobile {
+    background-color: var(--special);
+    text-align: center;
+    line-height: 40px;
 }
+
+.hide {
+    display: none;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    place-content: center;
+}
+
+.hero-section .hero-image img {
+    width: 350px;
+}
+
+.hero-section .hero-content button {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: var(--text);
+}
+
+@media screen and (max-width: 375px) {
+    /* Navbar */
+    .navbar-desktop .navbar-toggle {
+        visibility: visible;
+    }
+
     .navbar-desktop .navbar-items {
         display: none;
     }
+    /* End */
+
+    /* Hero */
+
+    .hero-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .hero-section .hero-image img {
+        width: 250px;
+    }
+
+    .hero-section .hero-content {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    /* End */
+
 }
