@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project of AI-202502C</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar-desktop">
@@ -36,7 +43,6 @@
 
 
     <!-- Hero -->
-
     <div class="hero-section">
         <div class="hero-content">
             <h2>Unlimited movies, TV shows, and more</h2>
@@ -49,6 +55,58 @@
             <img src="./images/hero.png" alt="">
         </div>
     </div>
+    <!-- End -->
+
+    <!-- About -->
+    <div class="about-section">
+        <div class="about-text" data-aos="fade-left">
+            <h2>About Netflix</h2>
+            <p>
+                Netflix is an American subscription video on-demand over-the-top streaming service. The service
+                primarily distributes original and acquired films and television shows from various genres, and it is
+                available internationally in multiple languages.
+            </p>
+        </div>
+        <div class="about-img" data-aos="fade-right">
+            <img src="./images/about.jpg">
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Contact -->
+
+    <div class="contact-section" data-aos="flip-up">
+        <div class="contact-form">
+            <h2>Send Us A Message</h2>
+            <form>
+                <input type="email" class="inputField" placeholder="Enter Your Email">
+
+                <textarea class="inputField" placeholder="Convey Message"></textarea>
+
+                <button>SUBMIT</button>
+            </form>
+        </div>
+        <div class="contact-address">
+            <div>
+                <p>
+                    <i class="ri-map-pin-line"></i><span>Address</span>
+                </p>
+                <p>Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
+            </div>
+            <div>
+                <p>
+                    <i class="ri-smartphone-line"></i><span>Lets Talk</span>
+                </p>
+                <p>+1 800 1236879</p>
+            </div>
+            <div>
+                <p>
+                    <i class="ri-mail-send-line"></i><span>Sale Support</span>
+                </p>
+                <p>contact@example.com</p>
+            </div>
+        </div>
+    </div>
 
     <!-- End -->
 
@@ -56,5 +114,10 @@
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
     <script src="./js/fMotion.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-</html> 
+
+</html>

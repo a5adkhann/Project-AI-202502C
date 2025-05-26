@@ -56,6 +56,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     place-content: center;
+    padding-block: 100px;
 }
 
 .hero-section .hero-image img {
@@ -69,7 +70,55 @@ body {
     color: var(--text);
 }
 
-@media screen and (max-width: 375px) {
+.about-section {
+    background-color: var(--special);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 90px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+    gap: 80px;
+}
+
+.contact-section .contact-form form .inputField {
+    width: 100%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.contact-section .contact-form form textarea {
+    resize: none;
+    height: 70px;
+    border-radius: 0 !important;
+}
+
+.contact-section .contact-form h2 {
+    text-align: center;
+}
+
+.contact-section .contact-form form button {
+    width: 105%;
+    background-color: var(--special);
+    border: none;
+    padding: 5px;
+    color: var(--text);
+    border-radius: 50px;
+}
+
+.contact-address {
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
     /* Navbar */
     .navbar-desktop .navbar-toggle {
         visibility: visible;
@@ -85,6 +134,7 @@ body {
     .hero-section {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+        padding-block: 0;
     }
 
     .hero-section .hero-image img {
@@ -95,7 +145,25 @@ body {
         text-align: center;
         margin-top: 25px;
     }
-
     /* End */
+
+    /* About */
+    .about-section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 35px;
+        gap: 25px;
+    }
+    /* End */
+
+    /* Contact */
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-section .contact-form, .contact-address {
+        padding-inline: 40px;
+    }
+    /* End */
+
+
 
 }
