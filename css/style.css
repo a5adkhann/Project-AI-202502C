@@ -36,6 +36,11 @@ body {
     gap: 20px;
 }
 
+.navbar-desktop .navbar-items ul li a {
+    text-decoration: none;
+    color: red;
+}
+
 .navbar-desktop .navbar-toggle {
     /* display: none; */
     visibility: hidden;
@@ -118,6 +123,35 @@ body {
     line-height: 30px;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 30px;
+    background-color: var(--special);
+}
+
+footer div .section-heading {
+    font-weight: bold;  
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+footer #section-d form input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+footer #section-d form button {
+    background-color: red;
+    border: none;
+    color: var(--text);
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
 @media screen and (max-width: 768px) {
     /* Navbar */
     .navbar-desktop .navbar-toggle {
@@ -164,6 +198,10 @@ body {
     }
     /* End */
 
-
+    /* Footer */
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* End */
 
 }
